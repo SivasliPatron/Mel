@@ -1,0 +1,49 @@
+/* ========================================
+   NOOVA DESIGN - Main Stylesheet
+   Importiert alle CSS-Module
+   ======================================== */
+
+/* Variablen (Farben, Schatten, etc.) */
+@import url('variables.css');
+
+/* Basis Styles (Reset, Typography) */
+@import url('base.css');
+
+/* Buttons */
+@import url('buttons.css');
+
+/* Navigation */
+@import url('navigation.css');
+
+/* Hero Sections */
+@import url('hero.css');
+
+/* Services / Leistungen */
+@import url('services.css');
+
+/* About Section */
+@import url('about.css');
+
+/* Tools Section */
+@import url('tools.css');
+
+/* Contact Section */
+@import url('contact.css');
+
+/* Portfolio */
+@import url('portfolio.css');
+
+/* Pricing */
+@import url('pricing.css');
+
+/* Additional Sections (Process, CTA, FAQ, Legal) */
+@import url('sections.css');
+
+/* Footer */
+@import url('footer.css');
+
+/* Cookie Banner */
+@import url('cookie-banner.css');
+
+/* Responsive Design */
+@import url('responsive.css');

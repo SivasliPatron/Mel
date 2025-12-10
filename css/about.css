@@ -1,0 +1,64 @@
+/* ========================================
+   ABOUT SECTION - Über Uns
+   ======================================== */
+
+.about {
+  padding: 100px 0;
+  background: var(--light);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text .section-title {
+  text-align: left;
+}
+
+.about-text p {
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+
+/* Stats */
+.about-stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* About Image */
+.about-image {
+  position: relative;
+  height: 400px;
+}
+
+.about-shape {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient);
+  border-radius: var(--radius-lg);
+  opacity: 0.8;
+}

@@ -1,0 +1,73 @@
+/* ========================================
+   BUTTONS - Alle Button Styles
+   ======================================== */
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+/* Dark background variant for light sections */
+.services .btn-secondary,
+.about .btn-secondary,
+.tools .btn-secondary,
+.contact .btn-secondary {
+  color: var(--dark);
+  border-color: var(--gray-light);
+}
+
+.services .btn-secondary:hover,
+.about .btn-secondary:hover,
+.tools .btn-secondary:hover,
+.contact .btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-small {
+  padding: 8px 20px;
+  font-size: 0.875rem;
+}
+
+.btn-nav {
+  background: var(--gradient);
+  color: var(--white) !important;
+  padding: 10px 24px;
+  border-radius: 50px;
+}

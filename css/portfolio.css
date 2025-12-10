@@ -1,0 +1,103 @@
+/* ========================================
+   PORTFOLIO - Galerie & Filter
+   ======================================== */
+
+.portfolio-section {
+  padding: 80px 0;
+  background: var(--light);
+}
+
+/* Filter Buttons */
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border: 2px solid var(--gray-light);
+  background: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--gray);
+  transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.portfolio-image {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+/* Placeholder für Portfolio Items */
+.portfolio-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* Gradient Hintergründe */
+.gradient-1 { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); }
+.gradient-2 { background: linear-gradient(135deg, #f97316 0%, #fb923c 100%); }
+.gradient-3 { background: linear-gradient(135deg, #10b981 0%, #34d399 100%); }
+.gradient-4 { background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); }
+.gradient-5 { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); }
+.gradient-6 { background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); }
+
+/* Portfolio Overlay */
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 27, 75, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h3 {
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.portfolio-overlay p {
+  color: var(--gray-light);
+  margin-bottom: 20px;
+}

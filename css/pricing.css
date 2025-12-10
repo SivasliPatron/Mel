@@ -1,0 +1,147 @@
+/* ========================================
+   PRICING - Preise & Pakete
+   ======================================== */
+
+.pricing-section {
+  padding: 80px 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: var(--transition);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--primary);
+}
+
+/* Badge */
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient);
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Header */
+.pricing-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.pricing-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.pricing-header p {
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+/* Features Liste */
+.pricing-features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.pricing-features li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing-features .check {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.pricing-features .minus {
+  color: var(--gray);
+}
+
+/* ========================================
+   INDIVIDUAL PRICING TABLE
+   ======================================== */
+
+.individual-pricing {
+  padding: 80px 0;
+  background: var(--light);
+}
+
+.price-table {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--gray-light);
+  align-items: center;
+}
+
+.price-row:last-child {
+  border-bottom: none;
+}
+
+.price-row.header {
+  background: var(--dark);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.price-service small {
+  display: block;
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.price-from {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.price-info {
+  color: var(--gray);
+  font-size: 0.9rem;
+}

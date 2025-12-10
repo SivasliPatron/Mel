@@ -1,0 +1,38 @@
+/* ========================================
+   CSS VARIABLES - Zentrale Farbdefinitionen
+   Hier ändern für globale Farbänderungen
+   ======================================== */
+
+:root {
+  /* Primärfarben */
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #f97316;
+  
+  /* Dunkle Farben */
+  --dark: #1e1b4b;
+  --dark-light: #312e81;
+  
+  /* Helle Farben */
+  --light: #f8fafc;
+  --gray: #64748b;
+  --gray-light: #e2e8f0;
+  --white: #ffffff;
+
+  /* Gradient */
+  --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+
+  /* Schatten */
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Border Radius */
+  --radius: 12px;
+  --radius-lg: 20px;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}
